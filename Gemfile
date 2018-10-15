@@ -46,6 +46,7 @@ gem 'simple_form', '~> 4.0', '>= 4.0.1'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'devise', '~> 4.5'
 
+
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
@@ -56,6 +57,7 @@ group :development do
   gem 'better_errors', '~> 2.5'
   gem 'guard', '~> 2.14', '>= 2.14.2'
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  gem 'rb-readline'
 end
 
 group :test do
