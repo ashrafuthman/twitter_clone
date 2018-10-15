@@ -6,10 +6,10 @@
  			</p>
  		</figure>
  		<div class="media-content">
- 			
+ 			<%= render 'tweeets/form' %>
  		</div>
  	</article>
- </div>
+
 
 <% @tweeets.each do |tweeet| %>
   <div class="box">
@@ -48,4 +48,4 @@
   </div>
  <% end %>
 
-<%= link_to 'New Tweeet', new_tweeet_path %>
+ </div>
