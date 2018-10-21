@@ -1,5 +1,5 @@
 class TweeetsController < ApplicationController
-  before_action :set_tweeet, only: [:edit, :update, :destroy]
+  before_action :set_tweeet, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, expect: [:index, :show]
   # GET /tweeets
   # GET /tweeets.json
@@ -42,8 +42,8 @@ class TweeetsController < ApplicationController
   # PATCH/PUT /tweeets/1.json
   def update
     respond_to do |format|
-      if @tweeet.update(tweeet_params)
-        format.html { redirect_to @tweeet, notice: 'Tweeet was successfully updated.' }
+      if @tweeet.update(tweeet_params) 
+        format.html { redirect_to root_path, notice: 'Tweeet was successfully updated.' }
         format.json { render :show, status: :ok, location: @tweeet }
       else
         format.html { render :edit }
